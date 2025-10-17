@@ -30,6 +30,10 @@
 
 src/
   app_streamlit.py   # UI: asks, shows traces, final answer, citations
+  
   pipeline.py        # end-to-end orchestration (retrieve → sample CoT → vote → save)
+  
   retriever.py       # TF-IDF indexer over docs/ (no heavy deps)
+  
   llm_client.py      # Backends: OLLAMA or OPENAI
+
