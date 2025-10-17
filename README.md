@@ -14,15 +14,16 @@
 ---
 
 **How it works**
-Index: Build a TF-IDF vector space from files in docs/.
 
-Retrieve: For a query, get top-k passages (cosine similarity).
+1.Index: Build a TF-IDF vector space from files in docs/.
 
-CoT Sampling: Generate n_samples independent chain-of-thought answers.
+2.Retrieve: For a query, get top-k passages (cosine similarity).
 
-Self-Consistency: Vote on the final answer; aggregate citations from retrieved docs.
+3.CoT Sampling: Generate n_samples independent chain-of-thought answers.
 
-Explain: Show all traces (with sources and scores). Save JSONL under results/.
+4.Self-Consistency: Vote on the final answer; aggregate citations from retrieved docs.
+
+5.Explain: Show all traces (with sources and scores). Save JSONL under results/.
 
 
 **Project Structure**
