@@ -16,24 +16,18 @@
 **How it works**
 
 1.Index: Build a TF-IDF vector space from files in docs/.
-
 2.Retrieve: For a query, get top-k passages (cosine similarity).
-
 3.CoT Sampling: Generate n_samples independent chain-of-thought answers.
-
 4.Self-Consistency: Vote on the final answer; aggregate citations from retrieved docs.
-
 5.Explain: Show all traces (with sources and scores). Save JSONL under results/.
 
 
 **Project Structure**
 
 src/
+
   app_streamlit.py   # UI: asks, shows traces, final answer, citations
-  
   pipeline.py        # end-to-end orchestration (retrieve → sample CoT → vote → save)
-  
   retriever.py       # TF-IDF indexer over docs/ (no heavy deps)
-  
   llm_client.py      # Backends: OLLAMA or OPENAI
 
