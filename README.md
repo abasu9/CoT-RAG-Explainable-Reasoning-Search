@@ -1,7 +1,6 @@
 
 ---
 
-```markdown
 #  CoT-RAG: Explainable Reasoning Search
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
@@ -40,6 +39,6 @@ src/
 └── llm_client.py      # LLM backends: Ollama or OpenAI
 
 ```
-```
+
 
 ---
