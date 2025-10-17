@@ -1,0 +1,8 @@
+streamlit>=1.38
+scikit-learn>=1.5
+numpy>=1.26
+pandas>=2.2
+tqdm>=4.66
+markdown>=3.6
+openai>=1.40
+requests>=2.32
